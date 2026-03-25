@@ -34,5 +34,5 @@ features = pd.DataFrame({
 # Predict button
 if st.button("Predict Price"):
  prediction = model.predict(features)[0]
- price = prediction * 100000  # Convert to dollars
- st.success(f"Estimated House Price: ${price:,.2f}")
+ price = prediction * 100000 
+ st.success(f"Estimated House Price: ${price * 100000:,.2f}")
