@@ -36,7 +36,3 @@ if st.button("Predict Price"):
  prediction = model.predict(features)[0]
  price = prediction * 100000  # Convert to dollars
  st.success(f"Estimated House Price: ${price:,.2f}")
-
-# if st.button("Predict Price"): 
-# prediction = model.predict(features) 
-# st.success(f"Estimated House Price: ${prediction[0]:,.2f}")
